@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Priya Sunnam — AI Engineer</title>
+  <meta name="description" content="Priya Sunnam — AI Engineer & Lead Full Stack Engineer. Building production AI systems with LLMs, generative AI, and multimodal models. Based in Toronto, Canada." />
+  <meta property="og:title" content="Priya Sunnam — AI Engineer" />
+  <meta property="og:description" content="Lead Full Stack Engineer at REBL. Building production AI workflows, LLM integrations, and generative AI features. Open to AI Engineer roles." />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- Neural canvas background -->
+<canvas id="neural-canvas"></canvas>
+
+<!-- NAV -->
+<nav id="navbar">
+  <div class="nav-inner">
+    <span class="nav-logo">PS<span class="cursor-blink">_</span></span>
+    <ul class="nav-links" style="margin-right: auto;">
+      <li><a href="#about">About</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a href="mailto:shivapriyasunnam@gmail.com" class="btn-nav">Hire Me →</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="section-inner hero-inner">
+  <div class="hero-content">
+    <div class="hero-badge">
+      <span class="badge-dot"></span>
+      Available for AI Engineer roles
+    </div>
+    <h1 class="hero-name">
+      Priya<br /><span class="gradient-text">Sunnam</span>
+    </h1>
+    <div class="hero-tagline">
+      <span id="typed-text"></span><span class="cursor-blink">|</span>
+    </div>
+    <p class="hero-desc">
+      Lead Full Stack Engineer building AI-powered products at REBL. I architect generative AI workflows, integrate LLMs into production systems, and ship intelligent experiences at scale.
+    </p>
+    <div class="hero-actions">
+      <a href="#experience" class="btn-primary">View My Work</a>
+      <a href="https://www.linkedin.com/in/shivapriyasunnam/" target="_blank" class="btn-ghost">LinkedIn</a>
+      <a href="https://github.com/shivapriyasunnam" target="_blank" class="btn-ghost">GitHub</a>
+    </div>
+    <div class="hero-stats">
+      <div class="stat">
+        <span class="stat-num">5+</span>
+        <span class="stat-label">Years Engineering</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat">
+        <span class="stat-num">2+</span>
+        <span class="stat-label">Years Building AI Products</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat">
+        <span class="stat-num">LLMs</span>
+        <span class="stat-label">In Production</span>
+      </div>
+    </div>
+  </div>
+  <div class="hero-visual" id="hero-visual">
+    <div class="orbit-ring ring-outer" id="ring-outer"></div>
+    <div class="orbit-ring ring-mid" id="ring-mid"></div>
+    <div class="orbit-ring ring-inner" id="ring-inner"></div>
+    <div class="hero-core">
+      <div class="core-pulse"></div>
+      <div class="core-pulse delay"></div>
+      <span class="core-label">AI</span>
+    </div>
+  </div>
+  </div><!-- /hero-inner -->
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="section-inner">
+    <div class="section-label">
+      <span class="label-line"></span>
+      <span>About</span>
+    </div>
+    <div class="about-grid">
+      <div class="about-text">
+        <h2>Building at the intersection of<br /><span class="gradient-text">engineering & intelligence</span></h2>
+        <p>
+          I'm a software engineer who has spent the last two years shipping AI-powered features into real products — not prototypes, but production systems that users interact with every day. At REBL, I've integrated LLMs, image generation models, and streaming AI pipelines into a creator platform used by thousands.
+        </p>
+        <p>
+          I hold a Master of Applied Computer Science from St. Francis Xavier University and have been building software since 2019 across cloud platforms, distributed systems, and full-stack applications. Right now, I'm formalizing my AI engineering knowledge through structured roadmaps (roadmap.sh AI Engineer and Claude Code tracks) — closing gaps in RAG, embeddings, and agentic systems.
+        </p>
+        <p>
+          I'm actively looking for AI Engineer and AI-focused engineering roles where I can go deeper on the infrastructure and systems that make intelligent applications work.
+        </p>
+      </div>
+      <div class="about-card">
+        <div class="terminal-card">
+          <div class="terminal-header">
+            <span class="dot red"></span>
+            <span class="dot yellow"></span>
+            <span class="dot green"></span>
+            <span class="terminal-title">profile.json</span>
+          </div>
+          <pre class="terminal-body"><code><span class="j-key">"name"</span>: <span class="j-str">"Priya Sunnam"</span>,
+<span class="j-key">"role"</span>: <span class="j-str">"Lead Full Stack Engineer"</span>,
+<span class="j-key">"company"</span>: <span class="j-str">"REBL"</span>,
+<span class="j-key">"location"</span>: <span class="j-str">"Toronto, Canada"</span>,
+<span class="j-key">"focus"</span>: [
+  <span class="j-str">"LLM Integration"</span>,
+  <span class="j-str">"Generative AI"</span>,
+  <span class="j-str">"AI Agents"</span>,
+  <span class="j-str">"Full Stack AI"</span>
+],
+<span class="j-key">"education"</span>: <span class="j-str">"MCS @ StFX"</span>,
+<span class="j-key">"open_to"</span>: <span class="j-bool">true</span>,
+<span class="j-key">"status"</span>: <span class="j-str">"actively looking"</span></code></pre>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience">
+  <div class="section-inner">
+    <div class="section-label">
+      <span class="label-line"></span>
+      <span>Experience</span>
+    </div>
+    <h2 class="section-title">Where I've Built</h2>
+
+    <div class="timeline">
+
+      <div class="timeline-item">
+        <div class="tl-marker">
+          <div class="tl-dot"></div>
+          <div class="tl-line"></div>
+        </div>
+        <div class="tl-card">
+          <div class="tl-header">
+            <div>
+              <span class="tl-company">REBL</span>
+              <span class="tl-sep">·</span>
+              <span class="tl-role">Lead Full Stack Engineer</span>
+            </div>
+            <span class="tl-date">2024 — Present</span>
+          </div>
+          <div class="tl-tags">
+            <span class="tag ai">LLMs</span>
+            <span class="tag ai">Generative AI</span>
+            <span class="tag">React / Next.js</span>
+            <span class="tag">FeathersJS</span>
+            <span class="tag">React Native</span>
+            <span class="tag">DigitalOcean</span>
+            <span class="tag">Stripe</span>
+          </div>
+          <ul class="tl-bullets">
+            <li>Integrated LLMs and generative AI workflows into production — AI assistants, content generation, prompt-based interactions, and creator collaboration tools.</li>
+            <li>Built real-time backend services and APIs supporting AI generation pipelines, messaging, subscriptions, and virtual economy systems.</li>
+            <li>Worked with multimodal AI integrations: text and image generation models, prompt engineering workflows, streaming response handling, and token management.</li>
+            <li>Architected cloud infrastructure on DigitalOcean supporting scalable AI workloads and production reliability.</li>
+            <li>Implemented Stripe subscription systems with usage-based credits, proration, and virtual currency management.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="tl-marker">
+          <div class="tl-dot"></div>
+          <div class="tl-line"></div>
+        </div>
+        <div class="tl-card">
+          <div class="tl-header">
+            <div>
+              <span class="tl-company">Creatubbles</span>
+              <span class="tl-sep">·</span>
+              <span class="tl-role">Software Developer</span>
+            </div>
+            <span class="tl-date">2023 — 2024</span>
+          </div>
+          <div class="tl-tags">
+            <span class="tag">Internal Tooling</span>
+            <span class="tag">Cloud</span>
+            <span class="tag">UX</span>
+          </div>
+          <ul class="tl-bullets">
+            <li>Developed internal tools that increased developer efficiency and streamlined development processes.</li>
+            <li>Improved customization features for user-friendliness, contributing to a 30% increase in customer growth.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="tl-marker">
+          <div class="tl-dot"></div>
+          <div class="tl-line"></div>
+        </div>
+        <div class="tl-card">
+          <div class="tl-header">
+            <div>
+              <span class="tl-company">Pramati Software</span>
+              <span class="tl-sep">·</span>
+              <span class="tl-role">Software Developer</span>
+            </div>
+            <span class="tl-date">2020 — 2022</span>
+          </div>
+          <div class="tl-tags">
+            <span class="tag">Kubernetes</span>
+            <span class="tag">Docker</span>
+            <span class="tag">Java / Spring</span>
+            <span class="tag">AWS</span>
+            <span class="tag">Security</span>
+          </div>
+          <ul class="tl-bullets">
+            <li>Core contributor to HyScale — an Application Centric Abstraction Framework over Kubernetes for multi-cloud deployments.</li>
+            <li>Implemented container security scanning, auto stack updates, and automatic network policies for Kubernetes infrastructure.</li>
+            <li>Contributed to 15% growth in international market adoption and 30% overall customer growth via feature development and global user support.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="tl-marker">
+          <div class="tl-dot no-line"></div>
+        </div>
+        <div class="tl-card">
+          <div class="tl-header">
+            <div>
+              <span class="tl-company">Polycom</span>
+              <span class="tl-sep">·</span>
+              <span class="tl-role">Software Engineer Intern</span>
+            </div>
+            <span class="tl-date">2019 — 2020</span>
+          </div>
+          <div class="tl-tags">
+            <span class="tag">Python</span>
+            <span class="tag">React</span>
+            <span class="tag">Agile</span>
+          </div>
+          <ul class="tl-bullets">
+            <li>Developed software solutions complementing Poly's audio and video product line.</li>
+            <li>Refactored legacy code and converted legacy APIs to dynamic REST APIs, reducing technical debt across the codebase.</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <div class="section-inner">
+    <div class="section-label">
+      <span class="label-line"></span>
+      <span>Skills</span>
+    </div>
+    <h2 class="section-title">Technical Stack</h2>
+
+    <div class="skills-grid">
+      <div class="skill-group">
+        <div class="skill-group-header">
+          <span class="skill-icon">🧠</span>
+          <span>AI / ML</span>
+        </div>
+        <div class="skill-tags">
+          <span class="stag">LLM Prompt Engineering</span>
+          <span class="stag">Generative AI Integration</span>
+          <span class="stag">AI Workflow Orchestration</span>
+          <span class="stag">Multimodal AI Systems</span>
+          <span class="stag">RLHF Concepts</span>
+          <span class="stag">AI Model Evaluation</span>
+          <span class="stag">Streaming AI Responses</span>
+          <span class="stag">Content Generation Pipelines</span>
+          <span class="stag">RAG</span>
+          <span class="stag">AI Agent Architecture</span>
+        </div>
+      </div>
+
+      <div class="skill-group">
+        <div class="skill-group-header">
+          <span class="skill-icon">⚡</span>
+          <span>Languages</span>
+        </div>
+        <div class="skill-tags">
+          <span class="stag">TypeScript</span>
+          <span class="stag">JavaScript</span>
+          <span class="stag">Python</span>
+          <span class="stag">Java</span>
+          <span class="stag">SQL</span>
+          <span class="stag">HTML5 / CSS3</span>
+          <span class="stag">C++</span>
+        </div>
+      </div>
+
+      <div class="skill-group">
+        <div class="skill-group-header">
+          <span class="skill-icon">🔧</span>
+          <span>Frameworks & Web</span>
+        </div>
+        <div class="skill-tags">
+          <span class="stag">React</span>
+          <span class="stag">Next.js</span>
+          <span class="stag">Node.js</span>
+          <span class="stag">FeathersJS</span>
+          <span class="stag">React Native</span>
+          <span class="stag">REST APIs</span>
+          <span class="stag">Real-Time Systems</span>
+        </div>
+      </div>
+
+      <div class="skill-group">
+        <div class="skill-group-header">
+          <span class="skill-icon">🗄️</span>
+          <span>Databases</span>
+        </div>
+        <div class="skill-tags">
+          <span class="stag">MongoDB</span>
+          <span class="stag">Neo4j</span>
+          <span class="stag">PostgreSQL</span>
+          <span class="stag">Data Modeling</span>
+          <span class="stag">Query Optimization</span>
+        </div>
+      </div>
+
+      <div class="skill-group">
+        <div class="skill-group-header">
+          <span class="skill-icon">☁️</span>
+          <span>Cloud & DevOps</span>
+        </div>
+        <div class="skill-tags">
+          <span class="stag">DigitalOcean</span>
+          <span class="stag">AWS</span>
+          <span class="stag">Docker</span>
+          <span class="stag">Kubernetes</span>
+          <span class="stag">CI/CD Pipelines</span>
+          <span class="stag">Vulnerability Scanning</span>
+          <span class="stag">Git / GitHub</span>
+        </div>
+      </div>
+
+      <div class="skill-group">
+        <div class="skill-group-header">
+          <span class="skill-icon">💳</span>
+          <span>Payments & Integrations</span>
+        </div>
+        <div class="skill-tags">
+          <span class="stag">Stripe</span>
+          <span class="stag">Subscription Systems</span>
+          <span class="stag">Billing Logic</span>
+          <span class="stag">Webhooks</span>
+          <span class="stag">Virtual Currency Systems</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="section-inner">
+    <div class="section-label">
+      <span class="label-line"></span>
+      <span>Projects</span>
+    </div>
+    <h2 class="section-title">Selected Work</h2>
+
+    <div class="projects-grid">
+
+      <div class="project-card featured">
+        <div class="project-glow"></div>
+        <div class="project-header">
+          <span class="project-type">AI Platform</span>
+          <a href="https://rebl.ai" target="_blank" class="project-link">↗</a>
+        </div>
+        <h3>REBL — AI Social Creation Platform</h3>
+        <p>Led integration of generative AI image creation, LLM-powered content assistants, and creator collaboration tools into a live social platform. Shipped multimodal AI features including text-to-image generation, style selection UIs, and NFT capabilities — serving the REBL creator community.</p>
+        <div class="project-tech">
+          <span>LLMs</span>
+          <span>Generative AI</span>
+          <span>React</span>
+          <span>FeathersJS</span>
+          <span>React Native</span>
+          <span>Stripe</span>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-glow"></div>
+        <div class="project-header">
+          <span class="project-type">Machine Learning</span>
+          <a href="https://github.com/shivapriyasunnam/Toxicity-Prediction-Using-Machine-Learning" target="_blank" class="project-link">↗</a>
+        </div>
+        <h3>Chemical Toxicity Prediction</h3>
+        <p>Predicted chemical toxicity from SMILE molecule strings using XGBoost, RDKit, and PubChem feature extraction. Achieved 83.02 on Kaggle with Random Over Sampler balancing and Randomized Search CV hyperparameter tuning.</p>
+        <div class="project-tech">
+          <span>Python</span>
+          <span>XGBoost</span>
+          <span>RDKit</span>
+          <span>Docker</span>
+          <span>Kaggle</span>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-glow"></div>
+        <div class="project-header">
+          <span class="project-type">Data Science</span>
+          <a href="https://github.com/shivapriyasunnam/world-development-indicators" target="_blank" class="project-link">↗</a>
+        </div>
+        <h3>World Development Analysis</h3>
+        <p>30-year analysis of 30 countries using World Bank data and 25 indicators. Applied PCA, k-Means and hierarchical clustering for pattern identification, and novel feature-engineered indices to visualize global economic trends.</p>
+        <div class="project-tech">
+          <span>Python</span>
+          <span>Pandas</span>
+          <span>PCA</span>
+          <span>k-Means</span>
+          <span>Matplotlib</span>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-glow"></div>
+        <div class="project-header">
+          <span class="project-type">Research / ML</span>
+        </div>
+        <h3>Food–Drug Interaction via ML</h3>
+        <p>Research project leveraging ML to predict food-drug interactions (positive, negative, adverse) using DrugBank and FooDB datasets. Applied k-Means, Gaussian methods, and Multi-Layer Perceptron with molecular similarity ratios as features.</p>
+        <div class="project-tech">
+          <span>Python</span>
+          <span>MLP</span>
+          <span>k-Means</span>
+          <span>DrugBank</span>
+          <span>FooDB</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- EDUCATION & CERTS -->
+<section id="education">
+  <div class="section-inner">
+    <div class="section-label">
+      <span class="label-line"></span>
+      <span>Education</span>
+    </div>
+    <div class="edu-grid">
+      <div class="edu-card">
+        <div class="edu-icon">🎓</div>
+        <div>
+          <h3>Master of Applied Computer Science</h3>
+          <p class="edu-school">St. Francis Xavier University, Nova Scotia</p>
+          <p class="edu-detail">2022 — 2024 · CGPA 3.5/4</p>
+          <p class="edu-detail muted">TA: High Performance Computing · Research: ML, Data Analysis</p>
+        </div>
+      </div>
+      <div class="edu-card">
+        <div class="edu-icon">🎓</div>
+        <div>
+          <h3>Bachelor of Computer Science</h3>
+          <p class="edu-school">CMR College of Engineering & Technology (JNTU)</p>
+          <p class="edu-detail">2016 — 2020 · CGPA 3.4/4</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="cert-grid">
+      <div class="cert-item">
+        <span class="cert-icon">☁️</span>
+        <span>Microsoft Technology Associate — Cloud Fundamentals</span>
+      </div>
+      <div class="cert-item">
+        <span class="cert-icon">🐍</span>
+        <span>Python ISO Certified Developer</span>
+      </div>
+      <div class="cert-item">
+        <span class="cert-icon">☁️</span>
+        <span>Google Cloud Platform Essentials</span>
+      </div>
+      <div class="cert-item">
+        <span class="cert-icon">☸️</span>
+        <span>Kubernetes Engine — Qwiklabs</span>
+      </div>
+      <div class="cert-item">
+        <span class="cert-icon">👩‍💻</span>
+        <span>Member — WomenTechMakers, Google Developer Groups Toronto & Halifax</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="section-inner contact-inner">
+    <div class="contact-glow"></div>
+    <div class="section-label centered">
+      <span class="label-line"></span>
+      <span>Contact</span>
+      <span class="label-line"></span>
+    </div>
+    <h2 class="section-title center">Let's build something intelligent</h2>
+    <p class="contact-desc">
+      I'm actively looking for AI Engineer roles and AI-focused engineering positions. If you're working on something interesting with LLMs, agents, or generative AI — I'd love to talk.
+    </p>
+    <div class="contact-links">
+      <a href="mailto:shivapriyasunnam@gmail.com" class="contact-btn">
+        <span class="contact-icon">✉</span>
+        shivapriyasunnam@gmail.com
+      </a>
+      <a href="https://www.linkedin.com/in/shivapriyasunnam/" target="_blank" class="contact-btn">
+        <span class="contact-icon">in</span>
+        LinkedIn
+      </a>
+      <a href="https://github.com/shivapriyasunnam" target="_blank" class="contact-btn">
+        <span class="contact-icon">⌥</span>
+        GitHub
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>Built by Priya Sunnam · Toronto, Canada · 2025</p>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
