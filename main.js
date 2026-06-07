@@ -34,6 +34,12 @@
   function draw() {
     ctx.clearRect(0, 0, W, H);
 
+    const isLight = document.body.classList.contains('light-mode');
+    const edgeColor = isLight ? '60,80,200' : '99,179,237';
+    const nodeColor = isLight ? '60,80,200' : '99,179,237';
+    const edgeAlphaScale = isLight ? 0.9 : 0.75;
+    const nodeAlpha = isLight ? 1.0 : 0.7;
+
     // edges
     for (let i = 0; i < nodes.length; i++) {
       for (let j = i + 1; j < nodes.length; j++) {
@@ -41,12 +47,12 @@
         const dx = a.x - b.x, dy = a.y - b.y;
         const d = Math.sqrt(dx * dx + dy * dy);
         if (d < CONNECT_DIST) {
-          const alpha = (1 - d / CONNECT_DIST) * 0.45;
+          const alpha = (1 - d / CONNECT_DIST) * edgeAlphaScale;
           ctx.beginPath();
           ctx.moveTo(a.x, a.y);
           ctx.lineTo(b.x, b.y);
-          ctx.strokeStyle = `rgba(99,179,237,${alpha})`;
-          ctx.lineWidth = 0.7;
+          ctx.strokeStyle = `rgba(${edgeColor},${alpha})`;
+          ctx.lineWidth = isLight ? 1.2 : 1.0;
           ctx.stroke();
         }
       }
@@ -56,7 +62,7 @@
     nodes.forEach(n => {
       ctx.beginPath();
       ctx.arc(n.x, n.y, n.r, 0, Math.PI * 2);
-      ctx.fillStyle = 'rgba(99,179,237,0.7)';
+      ctx.fillStyle = `rgba(${nodeColor},${nodeAlpha})`;
       ctx.fill();
     });
   }
@@ -243,5 +249,53 @@
   const groups = document.querySelectorAll('.skill-group');
   groups.forEach((g, i) => {
     g.style.transitionDelay = `${i * 0.06}s`;
+  });
+})();
+
+
+/* ==========================================
+   HIRE ME DROPDOWN
+   ========================================== */
+(function () {
+  const wrap = document.getElementById('hire-dropdown-wrap');
+  const btn  = document.getElementById('hire-btn');
+
+  btn.addEventListener('click', (e) => {
+    e.stopPropagation();
+    const open = wrap.classList.toggle('open');
+    btn.setAttribute('aria-expanded', open);
+  });
+
+  document.addEventListener('click', () => {
+    wrap.classList.remove('open');
+    btn.setAttribute('aria-expanded', 'false');
+  });
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+      wrap.classList.remove('open');
+      btn.setAttribute('aria-expanded', 'false');
+    }
+  });
+})();
+
+
+/* ==========================================
+   DARK / LIGHT MODE TOGGLE
+   ========================================== */
+(function () {
+  const btn = document.getElementById('theme-toggle');
+  const body = document.body;
+
+  const saved = localStorage.getItem('theme');
+  if (saved === 'light') {
+    body.classList.add('light-mode');
+    btn.textContent = '☀️';
+  }
+
+  btn.addEventListener('click', () => {
+    const isLight = body.classList.toggle('light-mode');
+    btn.textContent = isLight ? '☀️' : '🌙';
+    localStorage.setItem('theme', isLight ? 'light' : 'dark');
   });
 })();
