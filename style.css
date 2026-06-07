@@ -51,7 +51,7 @@ body {
   inset: 0;
   z-index: 0;
   pointer-events: none;
-  opacity: 0.35;
+  opacity: 0.55;
 }
 
 /* ========================================
@@ -324,6 +324,7 @@ section {
   width: 440px;
   height: 440px;
   flex-shrink: 0;
+  transform: translateX(50px);
 }
 
 /* Three concentric rings, all contained within the box */
@@ -407,7 +408,7 @@ section {
 /* ========================================
    ABOUT
    ======================================== */
-#about { background: var(--bg2); }
+#about { background: transparent; }
 
 .about-grid {
   display: grid;
@@ -474,7 +475,7 @@ section {
 /* ========================================
    EXPERIENCE / TIMELINE
    ======================================== */
-#experience { background: var(--bg); }
+#experience { background: transparent; }
 
 .timeline { display: flex; flex-direction: column; gap: 0; }
 
@@ -534,6 +535,11 @@ section {
   font-size: 17px;
   color: var(--text);
 }
+.tl-company-link {
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.tl-company-link:hover { color: var(--cyan); }
 .tl-sep { color: var(--text-dim); margin: 0 6px; }
 .tl-role {
   font-size: 15px;
@@ -594,7 +600,7 @@ section {
 /* ========================================
    SKILLS
    ======================================== */
-#skills { background: var(--bg2); }
+#skills { background: transparent; }
 
 .skills-grid {
   display: grid;
@@ -641,7 +647,7 @@ section {
 /* ========================================
    PROJECTS
    ======================================== */
-#projects { background: var(--bg); }
+#projects { background: transparent; }
 
 .projects-grid {
   display: grid;
@@ -734,7 +740,7 @@ section {
 /* ========================================
    EDUCATION
    ======================================== */
-#education { background: var(--bg2); }
+#education { background: transparent; }
 
 .edu-grid {
   display: flex;
@@ -780,7 +786,7 @@ section {
    CONTACT
    ======================================== */
 #contact {
-  background: var(--bg);
+  background: transparent;
   min-height: 60vh;
   display: flex;
   align-items: center;
